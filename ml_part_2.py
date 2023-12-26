@@ -16,7 +16,7 @@ diabetes = datasets.load_diabetes()
       - s5      ltg, possibly log of serum triglycerides level
       - s6      glu, blood sugar level
 """
-diabetes_X = diabetes.data[:, np.newaxis, 2]
+diabetes_X = diabetes.data
 
 diabetes_X_train = diabetes_X[:-30]
 diabetes_X_test = diabetes_X[-30:]
@@ -32,8 +32,8 @@ diabetes_Y_predicted = model.predict(diabetes_X_test)
 
 print(mean_squared_error(diabetes_Y_test, diabetes_Y_predicted))
 
-plt.scatter(diabetes_X_test, diabetes_Y_test)
+#plt.scatter(diabetes_X_test, diabetes_Y_test)
 
-plt.plot(diabetes_X_test, diabetes_Y_predicted)
+#plt.plot(diabetes_X_test, diabetes_Y_predicted)
 
-plt.show()
+#plt.show()
