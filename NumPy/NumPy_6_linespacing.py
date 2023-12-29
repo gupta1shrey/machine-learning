@@ -10,5 +10,19 @@ import numpy as np
 7- random()
 help(np.ones) - know every thing about the array
 """
+help(np.linspace)
 
+a = np.linspace(1, 100, num= 10)#make array from 1 to 100 with equal spacing
+print(a)
 
+a1 = np.linspace(1, 100, num=10, endpoint=False)#make array with end point
+print(a1)
+
+a2 = np.linspace(1, 100, num=10, retstep=True)
+print(a2)
+
+a3 = np.linspace(1,100, num=10, dtype="int")#change data type
+print(a3)
+
+a4 = np.linspace(1,100)#did not give space
+print(a4)

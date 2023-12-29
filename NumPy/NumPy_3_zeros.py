@@ -8,9 +8,9 @@ import numpy as np
 5- linspace()
 6- eye()
 7- random()
-
+help(np.zeros) - crates array filled with 0
 """
-help(np.zeros)
+
 a = np.zeros(5)#create array with 0, default data type = float
 print(a)
 
